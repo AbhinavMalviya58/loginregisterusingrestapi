@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">login register using REST API</string>
+    <string name="email">email</string>
+    <string name="Login">Login</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re enter password</string>
+    <string name="phone">Phone</string>
+    <string name="new_here">New here?</string>
+    <string name="create_account">Create account</string>
+    <string name="businessName">Business Name</string>
+    <string name="informalName">Informal Name</string>
+    <string name="streetAddress">Street Address</string>
+    <string name="City">City</string>
+    <string name="enterZipcode">Enter Zipcode</string>
+    <string name="Verificationinfo">Attached proof of Department of Agriculture registrations i.e. Florida Fresh, USDA Approved, USDA Organic</string>
+    <string name="fullName">Full Name</string>
+</resources>

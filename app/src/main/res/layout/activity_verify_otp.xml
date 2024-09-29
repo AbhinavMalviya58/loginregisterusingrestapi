@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify_OTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="25dp"
+            android:text="Forgot Password?"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember your pasword? "
+                android:textColor="#546E7A"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Welcome" />
+
+            <TextView
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/Primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/CreateAccount"
+                app:layout_constraintStart_toEndOf="@id/CreateAccount"
+                app:layout_constraintTop_toTopOf="@id/CreateAccount" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <!-- EditText for password -->
+
+            <EditText
+                android:id="@+id/OTP_1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/background"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/OTP_2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="86dp"
+                android:background="@drawable/background"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/OTP_3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="161dp"
+                android:background="@drawable/background"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/OTP_4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="232dp"
+                android:background="@drawable/background"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/OTP_5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="301dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/background"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <!-- Forgot Password TextView -->
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Login_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/orLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Resend Code"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Welcome" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

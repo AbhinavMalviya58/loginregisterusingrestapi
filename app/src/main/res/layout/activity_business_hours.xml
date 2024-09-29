@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".businessHours">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="Business Hours"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/tv_subtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Choose the hours your farm is open for pickups. This will allow customers to order deliveries."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Day Selection Buttons -->
+        <LinearLayout
+            android:id="@+id/day_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtext">
+
+            <!-- Days of the Week Buttons -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/T"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="T"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/W"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="W"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/Th"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="Th"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/F"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="F"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="S"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/Su"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="Su"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <!-- Time Slots -->
+        <LinearLayout
+            android:id="@+id/time_slots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Time Slot 1 -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/firstSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/SecondSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_slotsSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Time Slot 1 -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ThirdSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/FourthSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_slotsThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Time Slot 1 -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fifthSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/FourthSlot"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="10:00am - 1:00pm"
+                    android:textColor="@color/light_slate_gray"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="91dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/back"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:text="Signup"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="30dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
